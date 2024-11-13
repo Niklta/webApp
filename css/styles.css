@@ -1,23 +1,14 @@
-:root {
-  --tg-theme-bg-color: var(--telegram-bg-color, #f4f4f4);
-  --tg-theme-text-color: var(--telegram-text-color, #333);
-  --tg-theme-header-bg-color: var(--telegram-header-bg-color, #333);
-  --tg-theme-header-text-color: var(--telegram-header-text-color, #fff);
-  --tg-theme-border-color: var(--telegram-border-color, #ddd);
-  --tg-theme-product-bg-color: var(--telegram-product-bg-color, #fff);
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--tg-theme-bg-color);
-  color: var(--tg-theme-text-color);
+  background-color: var(--tg-theme-bg-color, #f4f4f4);
+  color: var(--tg-theme-text-color, #333);
 }
 
 header {
-  background-color: var(--tg-theme-header-bg-color);
-  color: var(--tg-theme-header-text-color);
+  background-color: var(--tg-theme-header-bg-color, #333);
+  color: var(--tg-theme-text-color, #333);
   text-align: center;
   padding: 1em 0;
 }
@@ -31,13 +22,13 @@ main {
 }
 
 .category h2 {
-  border-bottom: 2px solid var(--tg-theme-border-color);
+  border-bottom: 2px solid var(--tg-theme-secondary-bg-color, #ddd);
   padding-bottom: 0.5em;
 }
 
 .product {
-  background-color: var(--tg-theme-product-bg-color);
-  border: 1px solid var(--tg-theme-border-color);
+  background-color: var(--tg-theme-bg-color, #f4f4f4);
+  border: 1px solid var(--tg-theme-secondary-bg-color, #ddd);
   border-radius: 5px;
   padding: 1em;
   margin-bottom: 1em;
